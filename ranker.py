@@ -17,7 +17,7 @@ def ranker(query, index) :
             continue
         
         num_docs=len(index[word])
-        IDF[word]=math.log((total_docs+1)/((num_docs+1)+1))
+        IDF[word]=math.log((total_docs+1)/(num_docs+1))+1
         
         for doc in index[word] :
             scores[doc]+=index[word][doc]*w_count*IDF[word]
