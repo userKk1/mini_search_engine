@@ -1,6 +1,6 @@
 stop_words={"a","an","the","in","at","on","or","and","with","is","are","they",
             "but","you","it","we","before","after","he","she","to","from","was",
-            "were","had","have","each","every","be","being","throught","within","of","into"}
+            "were","had","have","each","every","be","being","through","within","of","into","between","if"}
 
 def clean_text(text) :
     text=text.lower()
